@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>G-Bezier</title>
+    <link rel="stylesheet" href="./parametr.css" />
+  </head>
+  <body>
+    <main>
+      <h1>G-Bezier</h1>
+      <div id="main-wraper">
+        <div id="form-wraper">
+          <div id="info-curve">
+            <p class="item-info">Name: curve 1</p>
+            <p class="item-info">Type: parametric</p>
+            <p class="item-info">Method: relevant</p>
+          </div>
+          <form name="form_relevant">
+            <div style="display: flex; justify-content: space-between">
+              <div class="label-form">
+                <label for="polygonal-input">Polygonal chain`s color</label>
+                <input
+                  type="color"
+                  name="polygonal-input"
+                  id="polygonal-input"
+                  disabled
+                />
+              </div>
+              <div class="label-form">
+                <label for="curve-input">Curve`s color</label>
+                <input
+                  type="color"
+                  name="curve-input"
+                  id="curve-input"
+                  disabled
+                />
+              </div>
+            </div>
+            <p class="form-headings" for="polygonal-input">Points</p>
+            <div id="list-points">
+              <div id="list-wraper">
+               
+              </div>
+              <div id="form-point">
+                <div style="display: flex; justify-content: space-between">
+                  <div class="label-form">
+                    <label for="x-input">X:</label>
+                    <input
+                      type="number"
+                      value="0"
+                      name="x-input"
+                      id="x-input"
+                      disabled
+                    />
+                  </div>
+                  <div class="label-form">
+                    <label for="y-input">Y:</label>
+                    <input
+                      type="number"
+                      value="0"
+                      name="y-input"
+                      id="y-input"
+                      disabled
+                    />
+                  </div>
+                </div>
+                <div class="label-form">
+                  <label for="points-color-input">Point`s color</label>
+                  <input
+                    type="color"
+                    name="points-color-input"
+                    id="points-color-input"
+                    disabled
+                  />
+                </div>
+                <div class="label-form">
+                  <label for="relevant-color-input">Relevant`s color</label>
+                  <input
+                    type="color"
+                    name="relevant-color-input"
+                    id="relevant-color-input"
+                    disabled
+                  />
+                </div>
+                <button
+                  class="button"
+                  id="button-addPoint"
+                  onclick="checkPointForm()"
+                  type="button"
+                  disabled
+                >
+                  Add
+                </button>
+              </div>
+            </div>
+            <div id="button-wraper">
+              
+              <button
+                id="button-create-rel"
+                disabled
+                class="button"
+                type="button"
+                onclick="checkRelForm()"
+              >
+                Save
+              </button>
+            </div>
+          </form>
+        </div>
+        <div id="canvas-wraper">
+          <form name="division-form">
+            <label for="division-input">Enter count of divisions:</label>
+            <input
+              placeholder="Enter count here ..."
+              value="0"
+              id="division-input"
+              type="number"
+            />
+            <label for="size-coord-input">Enter size of coord:</label>
+            <input
+              placeholder="Enter size here ..."
+              value="0"
+              id="size-coord-input"
+              type="number"
+            />
+            <button
+              id="button-division"
+              class="button"
+              type="button"
+              onclick="stopScale()"
+            >
+              Create
+            </button>
+          </form>
+          <div id="canvas">
+            <canvas width="600" id="myCanvas" height="600"></canvas>
+            <button
+              class="button"
+              id="button-cleanSys"
+              onclick="resetCanva()"
+              type="button"
+            >
+              Clean system
+            </button>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+  <script src="../system.js"></script>
+</html>
