@@ -45,7 +45,8 @@ h1 {
   font-weight: 600;
 }
 
-#curves-list {
+#curves-list,
+#deleted-elem {
   width: 90%;
   height: calc(100% - 100px);
   margin: auto;
@@ -85,7 +86,7 @@ h1 {
 
 .curve-block {
   width: 45%;
-  height: 40%;
+  height: 180px;
   border: 2px solid #2a2a72;
   border-radius: 20px;
   margin: 30px 5px;
@@ -304,4 +305,102 @@ input[type="radio"]:hover {
   background-color: #fff;
   color: red;
   display: none;
+}
+
+#wrapper-shadow {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #0000005c;
+  z-index: 4;
+  display: none;
+  overflow-y: auto;
+}
+
+#canvas-big-wraper,
+#deleted-all,
+#modal-del {
+  width: 800px;
+  height: 500px;
+  background-color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 2;
+  display: none;
+  border-radius: 10px;
+  padding: 50px;
+  flex-direction: column;
+}
+
+#modal-del{
+  height: 250px;
+}
+
+#canvas-big-wraper{
+  z-index: 6;
+}
+
+
+.button-close {
+  width: 70px;
+  height: 70px;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  font-family: "Monomakh", Arial;
+  font-size: 50px;
+  line-height: 43px;
+  text-align: center;
+  color: #5c2019;
+  transform: rotate(45deg);
+  position: absolute;
+  right: 0;
+  top: 0;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+}
+
+.empty{
+  width: 100%;
+  font-size: 30px;
+  font-family: monospace;
+  margin-top: 40px;
+  height: 90%;
+  text-align: center;
+  color: black;
+  display: none;
+}
+
+#war_text {
+  font-size: 30px;
+  width: 100%;
+  height: 100px;
+  line-height: 60px;
+  text-align: center;
+  font-family: monospace;
+}
+
+#buttons-modal {
+  width: 50%;
+  height: 60px;
+  align-self: flex-end;
+  margin-right: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.buttons-func-small {
+  width: 40%;
+  height: 50%;
+  background-color: transparent;
+  border: 2px solid #5c2019;
+  border-radius: 5px;
+  color: #5c2019;
+  text-align: center;
+  font-size: 18px;
 }
