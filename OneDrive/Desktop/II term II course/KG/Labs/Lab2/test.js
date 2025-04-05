@@ -242,6 +242,89 @@ function drawGrid() {
 
 }
 
+let points = []; // Масив точок для кривої Безьє
+let isDrawing = false;
+
+canvas.width = window.innerWidth;
+canvas.height = window.innerHeight;
+
+// Малює криву Безьє для збережених точок
+function drawBezierCurve() {
+    if (points.length < 2) return;
+    
+    
+
+    ctx.strokeStyle = "black";
+    ctx.lineWidth = 2;
+
+    ctx.beginPath();
+    ctx.moveTo(points[0].x, points[0].y);
+
+    if (points.length === 2) {
+        ctx.lineTo(points[1].x, points[1].y);
+    } else if (points.length === 3) {
+        ctx.quadraticCurveTo(points[1].x, points[1].y, points[2].x, points[2].y);
+    } else if (points.length >= 4) {
+        ctx.bezierCurveTo(points[1].x, points[1].y, points[2].x, points[2].y, points[3].x, points[3].y);
+    }
+
+    ctx.stroke();
+
+    // Малюємо контрольні точки
+    points.forEach((p) => drawPoint(p.x, p.y, "red"));
+
+}
+
+// Малює напрямну лінію від останньої точки до поточної позиції миші
+function drawGuideline(x, y) {
+    if (points.length === 0) return;
+    drawGrid();
+    drawBezierCurve(); // Перемальовуємо криву
+
+    ctx.strokeStyle = "gray";
+    ctx.setLineDash([5, 5]); // Пунктирна лінія
+
+    ctx.beginPath();
+    ctx.moveTo(points[points.length - 1].x, points[points.length - 1].y);
+    ctx.lineTo(x, y);
+    ctx.stroke();
+    ctx.setLineDash([]); // Скидаємо стиль лінії
+    
+}
+
+// Малює маленьку точку
+function drawPoint(x, y, color = "black") {
+    ctx.fillStyle = color;
+    ctx.beginPath();
+    ctx.arc(x, y, 5, 0, Math.PI * 2);
+    ctx.fill();
+}
+
+// Додавання нової точки при натисканні Enter
+document.addEventListener("keydown", (e) => {
+    if (e.key === "Enter") {
+        points.push({ x: lastX, y: lastY });
+        drawBezierCurve();
+    }
+});
+
+let lastX = 0, lastY = 0;
+
+// Оновлення напрямної лінії при русі миші
+canvas.addEventListener("mousemove", (e) => {
+    lastX = e.offsetX;
+    lastY = e.offsetY;
+    drawGuideline(lastX, lastY);
+    console.log("hi")
+});
+
+// Очищення канви при кліку правою кнопкою миші
+canvas.addEventListener("contextmenu", (e) => {
+    e.preventDefault();
+    points = [];
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+});
+
 const minScale = 1;
 const maxScale = 2; 
 let scaleForAnimation = 1;

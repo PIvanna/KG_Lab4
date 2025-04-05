@@ -20,9 +20,10 @@ h1 {
 
 #main-wraper {
   width: 90%;
-  height: 85vh;
   margin: 20px auto 0;
   display: flex;
+  flex-direction: column;
+
   justify-content: space-between;
 }
 
@@ -32,11 +33,8 @@ h1 {
 }
 
 #canvas-wraper {
-  width: 850px;
-  height: 100%;
   display: flex;
-  justify-content: space-between;
-  margin-left: 300px;
+  padding-bottom: 50px;
 }
 
 form[name="division-form"] {
@@ -125,6 +123,7 @@ label {
 #info-curve {
   width: 100%;
   height: 100px;
+  margin-bottom: 100px;
   display: flex;
   flex-direction: row;
   justify-content: space-around;

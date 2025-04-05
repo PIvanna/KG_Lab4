@@ -8,154 +8,18 @@
   </head>
   <body>
     <main>
-      <h1 onclick="saveCurveToLocal()">G-Bezier</h1>
+      <h1 onclick="notSaveCurveToLocal()">G-Bezier</h1>
       <div id="main-wraper">
-        <div id="form-wraper">
           <div id="info-curve">
             <p class="item-info">Name: curve 1</p>
             <p class="item-info">Type: parametric</p>
-            <p class="item-info">Method: relevant</p>
           </div>
-          <form name="form_relevant">
-            <div style="display: flex; justify-content: space-between">
-              <div id="relavant_wraper" class="label-form">
-                <label for="polygonal-input">Polygonal chain`s color</label>
-                <input
-                  type="color"
-                  name="polygonal-input"
-                  id="polygonal-input"
-                  
-                />
-              </div>
-              <div id="pointPolyg-wraper">
-                <div class="label-form">
-                  <label for="polygonal-color">Polygonal chain's color</label>
-
-                  <input
-                    type="radio"
-                    checked
-                    name="polygonal-option"
-                    id="polygonal-chain-radio"
-                    
-                  />
-                  <input
-                    type="color"
-                    name="polygonal-color"
-                    id="polygonal-chain-color"
-                    
-                  />
-                </div>
-                <div class="label-form">
-                  <label for="polygonal-color">Polygonal color</label>
-
-                  <input
-                    type="radio"
-                    name="polygonal-option"
-                    id="polygonal-radio"
-                    
-                  />
-                  <input
-                    type="color"
-                    name="polygonal-color"
-                    id="polygonal-color"
-                    
-                  />
-                </div>
-              </div>
-
-              <div class="label-form">
-                <label for="curve-input">Curve`s color</label>
-                <input
-                  type="color"
-                  name="curve-input"
-                  id="curve-input"
-                  
-                />
-              </div>
-            </div>
-            <p class="form-headings" for="polygonal-input">Points</p>
-            <div id="list-points">
-              <div id="list-wraper"></div>
-              <div id="form-point">
-                <div style="display: flex; justify-content: space-between">
-                  <div class="label-form">
-                    <label for="x-input">X: </label>
-                    <input
-                      type="number"
-                      value="0"
-                      name="x-input"
-                      id="x-input"
-                      
-                    />
-                  </div>
-                  <div class="label-form">
-                    <label for="y-input">Y:</label>
-                    <input
-                      type="number"
-                      value="0"
-                      name="y-input"
-                      id="y-input"
-                      
-                    />
-                  </div>
-                </div>
-                <div class="label-form">
-                  <label for="points-color-input">Point`s color</label>
-                  <input
-                    type="color"
-                    name="points-color-input"
-                    id="points-color-input"
-                    
-                  />
-                </div>
-
-                <button
-                  class="button"
-                  id="button-addPoint"
-                  onclick="checkPointForm()"
-                  type="button"
-                  
-                >
-                  Add
-                </button>
-                <button
-                  class="button"
-                  id="button-editPoint"
-                  onclick="editPoint()"
-                  type="button"
-                  
-                >
-                  Edit
-                </button>
-              </div>
-            </div>
-            <div id="button-wraper">
-              <button
-                id="button-create-rel"
-                
-                class="button"
-                type="button"
-                onclick="saveRelForm()"
-              >
-                Save form
-              </button>
-              <button
-                id="button-save-sys"
-                
-                class="button"
-                type="button"
-                onclick="checkRelForm()"
-              >
-                Save system
-              </button>
-            </div>
-          </form>
-        </div>
+          
+           
         <div id="canvas-wraper">
          
           <div id="canvas">
-            <canvas width="700" id="myCanvas" height="700"></canvas>
-            <div style="display: flex; justify-content: space-between">
+            <div style=" display: flex; justify-content: space-between">
               <button
                 class="button"
                 id="button-cleanSys"
@@ -176,7 +40,9 @@
                 Save curve
               </button>
             </div>
+            <canvas style=" margin-top: 50px; width: 1300px; height: 700px;" width="1300" id="myCanvas" height="900"></canvas>
           </div>
+          
         </div>
       </div>
     </main>
