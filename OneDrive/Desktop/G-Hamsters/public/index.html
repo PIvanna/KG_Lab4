@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>G-Hamsters</title>
+    <link rel="stylesheet" href="./styles/main.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo-wraper">
+        <div class="logo-image">
+          <img
+            src="https://firebasestorage.googleapis.com/v0/b/noa2-8fefc.appspot.com/o/images%2F%D0%9B%D0%9E%D0%93%D0%9E%20%D0%B2%D0%B5%D0%BA%D1%82%D0%BE%D1%80.jpg?alt=media&token=8fb85718-66e7-47de-aa24-17a413760946"
+            alt=""
+          />
+        </div>
+        <h1>G-Hamsters</h1>
+      </div>
+      <div class="register-button-wraper">
+        <button
+          type="button"
+          onclick="openModalRegister()"
+          class="sign-in-button"
+          id="sign-in-button"
+        >
+          Зареєструватися
+        </button>
+        <button id="login-button" onclick="openModalLogin()">Увійти</button>
+      </div>
+    </header>
+    <main>
+      <section>
+        <div class="info-course-wraper">
+          <div class="start-course-wraper">
+            <h2>Курси для новачків у комп’ютерній графіці</h2>
+            <button
+              type="button"
+              id="start-course"
+              onclick="openModalRegister()"
+            >
+              Почати
+            </button>
+          </div>
+          <div class="items-of-course">
+            <ul>
+              <li>
+                <div>
+                  <img
+                    src="https://firebasestorage.googleapis.com/v0/b/noa2-8fefc.appspot.com/o/images%2FVector.png?alt=media&token=87f583f6-4805-48ae-b0fe-126f5b2bdc71"
+                    alt="check"
+                  />
+                </div>
+                6 модулів
+              </li>
+              <li>
+                <div>
+                  <img
+                    src="https://firebasestorage.googleapis.com/v0/b/noa2-8fefc.appspot.com/o/images%2FVector.png?alt=media&token=87f583f6-4805-48ae-b0fe-126f5b2bdc71"
+                    alt="check"
+                  />
+                </div>
+                Тести
+              </li>
+              <li>
+                <div>
+                  <img
+                    src="https://firebasestorage.googleapis.com/v0/b/noa2-8fefc.appspot.com/o/images%2FVector.png?alt=media&token=87f583f6-4805-48ae-b0fe-126f5b2bdc71"
+                    alt="check"
+                  />
+                </div>
+                Вправи
+              </li>
+              <li>
+                <div>
+                  <img
+                    src="https://firebasestorage.googleapis.com/v0/b/noa2-8fefc.appspot.com/o/images%2FVector.png?alt=media&token=87f583f6-4805-48ae-b0fe-126f5b2bdc71"
+                    alt="check"
+                  />
+                </div>
+                Мініігри
+              </li>
+              <li>
+                <div>
+                  <img
+                    src="https://firebasestorage.googleapis.com/v0/b/noa2-8fefc.appspot.com/o/images%2FVector.png?alt=media&token=87f583f6-4805-48ae-b0fe-126f5b2bdc71"
+                    alt="check"
+                  />
+                </div>
+                Редактори
+              </li>
+              <li>
+                <div>
+                  <img
+                    src="https://firebasestorage.googleapis.com/v0/b/noa2-8fefc.appspot.com/o/images%2FVector.png?alt=media&token=87f583f6-4805-48ae-b0fe-126f5b2bdc71"
+                    alt="check"
+                  />
+                </div>
+                Гейміфікація
+              </li>
+              <li>
+                <div>
+                  <img
+                    src="https://firebasestorage.googleapis.com/v0/b/noa2-8fefc.appspot.com/o/images%2FVector.png?alt=media&token=87f583f6-4805-48ae-b0fe-126f5b2bdc71"
+                    alt="check"
+                  />
+                </div>
+                АІ
+              </li>
+              <li>
+                <div>
+                  <img
+                    src="https://firebasestorage.googleapis.com/v0/b/noa2-8fefc.appspot.com/o/images%2FVector.png?alt=media&token=87f583f6-4805-48ae-b0fe-126f5b2bdc71"
+                    alt="check"
+                  />
+                </div>
+                Персоналізація
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section>
+        <h2>Що ви навчитесь?</h2>
+        <div class="modules-wraper">
+          <div class="module-item">
+            <div class="module-name">
+              Модуль 1. <br />
+              Векторна графіка
+            </div>
+            <div class="additional-module">
+              1.kkd <br />
+              2. not kkd <br />
+              3. one milion percantage kkd <br />
+              4. zero percantage
+            </div>
+          </div>
+          <div class="module-item">
+            <div class="module-name">
+              Модуль 2. <br />
+              Крива Безьє
+            </div>
+            <div class="additional-module">
+              1.kkd <br />
+              2. not kkd <br />
+              3. one milion percantage kkd <br />
+              4. zero percantage
+            </div>
+          </div>
+          <div class="module-item">
+            <div class="module-name">
+              Модуль 3. <br />
+              Фрактали
+            </div>
+            <div class="additional-module">
+              1.kkd <br />
+              2. not kkd <br />
+              3. one milion percantage kkd <br />
+              4. zero percantage
+            </div>
+          </div>
+          <div class="module-item">
+            <div class="module-name">
+              Модуль 4. <br />
+              Кольори
+            </div>
+            <div class="additional-module">
+              1.kkd <br />
+              2. not kkd <br />
+              3. one milion percantage kkd <br />
+              4. zero percantage
+            </div>
+          </div>
+          <div class="module-item">
+            <div class="module-name">
+              Модуль 5. <br />
+              Афінні перетворення
+            </div>
+            <div class="additional-module">
+              1.kkd <br />
+              2. not kkd <br />
+              3. one milion percantage kkd <br />
+              4. zero percantage
+            </div>
+          </div>
+          <div class="module-item">
+            <div class="module-name">
+              Модуль 6. <br />
+              Інша інформація
+            </div>
+            <div class="additional-module">
+              1.kkd <br />
+              2. not kkd <br />
+              3. one milion percantage kkd <br />
+              4. zero percantage
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <h2>Приємні бонуси</h2>
+        <div class="bonus-wraper">
+          <div class="bonus-item">
+            <h3>Мініігри</h3>
+            <ul class="bonus-text-item">
+              <li>
+                <div>
+                  <img
+                    src="https://firebasestorage.googleapis.com/v0/b/noa2-8fefc.appspot.com/o/images%2FVector.png?alt=media&token=87f583f6-4805-48ae-b0fe-126f5b2bdc71"
+                    alt="check"
+                  />
+                </div>
+                Картинки
+              </li>
+              <li>
+                <div>
+                  <img
+                    src="https://firebasestorage.googleapis.com/v0/b/noa2-8fefc.appspot.com/o/images%2FVector.png?alt=media&token=87f583f6-4805-48ae-b0fe-126f5b2bdc71"
+                    alt="check"
+                  />
+                </div>
+                Футбол
+              </li>
+              <li>
+                <div>
+                  <img
+                    src="https://firebasestorage.googleapis.com/v0/b/noa2-8fefc.appspot.com/o/images%2FVector.png?alt=media&token=87f583f6-4805-48ae-b0fe-126f5b2bdc71"
+                    alt="check"
+                  />
+                </div>
+                У процесі
+              </li>
+              <li>
+                <div>
+                  <img
+                    src="https://firebasestorage.googleapis.com/v0/b/noa2-8fefc.appspot.com/o/images%2FVector.png?alt=media&token=87f583f6-4805-48ae-b0fe-126f5b2bdc71"
+                    alt="check"
+                  />
+                </div>
+                У процесі
+              </li>
+              <li>
+                <div>
+                  <img
+                    src="https://firebasestorage.googleapis.com/v0/b/noa2-8fefc.appspot.com/o/images%2FVector.png?alt=media&token=87f583f6-4805-48ae-b0fe-126f5b2bdc71"
+                    alt="check"
+                  />
+                </div>
+                У процесі
+              </li>
+            </ul>
+          </div>
+          <div class="bonus-item">
+            <h3>Редактори</h3>
+            <ul class="bonus-text-item">
+              <li>
+                <div>
+                  <img
+                    src="https://firebasestorage.googleapis.com/v0/b/noa2-8fefc.appspot.com/o/images%2FVector.png?alt=media&token=87f583f6-4805-48ae-b0fe-126f5b2bdc71"
+                    alt="check"
+                  />
+                </div>
+                Редактор побудови фігур
+              </li>
+              <li>
+                <div>
+                  <img
+                    src="https://firebasestorage.googleapis.com/v0/b/noa2-8fefc.appspot.com/o/images%2FVector.png?alt=media&token=87f583f6-4805-48ae-b0fe-126f5b2bdc71"
+                    alt="check"
+                  />
+                </div>
+                Редактор побудови кривої Безьє
+              </li>
+              <li>
+                <div>
+                  <img
+                    src="https://firebasestorage.googleapis.com/v0/b/noa2-8fefc.appspot.com/o/images%2FVector.png?alt=media&token=87f583f6-4805-48ae-b0fe-126f5b2bdc71"
+                    alt="check"
+                  />
+                </div>
+                Редактор побудови фракталів
+              </li>
+              <li>
+                <div>
+                  <img
+                    src="https://firebasestorage.googleapis.com/v0/b/noa2-8fefc.appspot.com/o/images%2FVector.png?alt=media&token=87f583f6-4805-48ae-b0fe-126f5b2bdc71"
+                    alt="check"
+                  />
+                </div>
+                У процесі
+              </li>
+              <li>
+                <div>
+                  <img
+                    src="https://firebasestorage.googleapis.com/v0/b/noa2-8fefc.appspot.com/o/images%2FVector.png?alt=media&token=87f583f6-4805-48ae-b0fe-126f5b2bdc71"
+                    alt="check"
+                  />
+                </div>
+                У процесі
+              </li>
+            </ul>
+          </div>
+          <div class="bonus-item">
+            <h3>Гейміфікація</h3>
+            <ul class="bonus-text-item">
+              <li>
+                <div>
+                  <img
+                    src="https://firebasestorage.googleapis.com/v0/b/noa2-8fefc.appspot.com/o/images%2FVector.png?alt=media&token=87f583f6-4805-48ae-b0fe-126f5b2bdc71"
+                    alt="check"
+                  />
+                </div>
+                Отримання особливих звань
+              </li>
+              <li>
+                <div>
+                  <img
+                    src="https://firebasestorage.googleapis.com/v0/b/noa2-8fefc.appspot.com/o/images%2FVector.png?alt=media&token=87f583f6-4805-48ae-b0fe-126f5b2bdc71"
+                    alt="check"
+                  />
+                </div>
+                Таблиці рейтенгів
+              </li>
+              <li>
+                <div>
+                  <img
+                    src="https://firebasestorage.googleapis.com/v0/b/noa2-8fefc.appspot.com/o/images%2FVector.png?alt=media&token=87f583f6-4805-48ae-b0fe-126f5b2bdc71"
+                    alt="check"
+                  />
+                </div>
+                Отримання особливих аватарів
+              </li>
+            </ul>
+          </div>
+          <div class="bonus-item">
+            <h3>АІ</h3>
+            <ul class="bonus-text-item">
+              <li>
+                <div>
+                  <img
+                    src="https://firebasestorage.googleapis.com/v0/b/noa2-8fefc.appspot.com/o/images%2FVector.png?alt=media&token=87f583f6-4805-48ae-b0fe-126f5b2bdc71"
+                    alt="check"
+                  />
+                </div>
+                Відповіді на ваші питання
+              </li>
+              <li>
+                <div>
+                  <img
+                    src="https://firebasestorage.googleapis.com/v0/b/noa2-8fefc.appspot.com/o/images%2FVector.png?alt=media&token=87f583f6-4805-48ae-b0fe-126f5b2bdc71"
+                    alt="check"
+                  />
+                </div>
+                Швидкий доступ до бази знань
+              </li>
+              <li>
+                <div>
+                  <img
+                    src="https://firebasestorage.googleapis.com/v0/b/noa2-8fefc.appspot.com/o/images%2FVector.png?alt=media&token=87f583f6-4805-48ae-b0fe-126f5b2bdc71"
+                    alt="check"
+                  />
+                </div>
+                НІ самотності під час навчання:)
+              </li>
+            </ul>
+          </div>
+          <div class="bonus-item">
+            <h3>Персоналізація</h3>
+            <ul class="bonus-text-item">
+              <li>
+                <div>
+                  <img
+                    src="https://firebasestorage.googleapis.com/v0/b/noa2-8fefc.appspot.com/o/images%2FVector.png?alt=media&token=87f583f6-4805-48ae-b0fe-126f5b2bdc71"
+                    alt="check"
+                  />
+                </div>
+                Особливий підбір темпу навчання для Вас
+              </li>
+              <li>
+                <div>
+                  <img
+                    src="https://firebasestorage.googleapis.com/v0/b/noa2-8fefc.appspot.com/o/images%2FVector.png?alt=media&token=87f583f6-4805-48ae-b0fe-126f5b2bdc71"
+                    alt="check"
+                  />
+                </div>
+                Графіки Вашої успішності
+              </li>
+              <li>
+                <div>
+                  <img
+                    src="https://firebasestorage.googleapis.com/v0/b/noa2-8fefc.appspot.com/o/images%2FVector.png?alt=media&token=87f583f6-4805-48ae-b0fe-126f5b2bdc71"
+                    alt="check"
+                  />
+                </div>
+                Збереження Вашої успішності під час проходження курсів
+              </li>
+              <li>
+                <div>
+                  <img
+                    src="https://firebasestorage.googleapis.com/v0/b/noa2-8fefc.appspot.com/o/images%2FVector.png?alt=media&token=87f583f6-4805-48ae-b0fe-126f5b2bdc71"
+                    alt="check"
+                  />
+                </div>
+                Колірні теми
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section>
+        <h2>Наша команда</h2>
+        <div class="team-wraper">
+          <div class="person-wraper">
+            <img
+              src="https://firebasestorage.googleapis.com/v0/b/noa2-8fefc.appspot.com/o/images%2F%D0%9B%D0%9E%D0%93%D0%9E%20%D0%B2%D0%B5%D0%BA%D1%82%D0%BE%D1%80.jpg?alt=media&token=8fb85718-66e7-47de-aa24-17a413760946"
+              alt=""
+            />
+            <div class="person-info">
+              <p class="person-init">Євтушенко Марія</p>
+              <p class="person-job">Не вирішено</p>
+            </div>
+          </div>
+          <div class="person-wraper">
+            <img
+              src="https://firebasestorage.googleapis.com/v0/b/noa2-8fefc.appspot.com/o/images%2F%D0%9B%D0%9E%D0%93%D0%9E%20%D0%B2%D0%B5%D0%BA%D1%82%D0%BE%D1%80.jpg?alt=media&token=8fb85718-66e7-47de-aa24-17a413760946"
+              alt=""
+            />
+            <div class="person-info">
+              <p class="person-init">Кітик Андрій</p>
+              <p class="person-job">Не вирішено</p>
+            </div>
+          </div>
+          <div class="person-wraper">
+            <img
+              src="https://firebasestorage.googleapis.com/v0/b/noa2-8fefc.appspot.com/o/images%2F%D0%9B%D0%9E%D0%93%D0%9E%20%D0%B2%D0%B5%D0%BA%D1%82%D0%BE%D1%80.jpg?alt=media&token=8fb85718-66e7-47de-aa24-17a413760946"
+              alt=""
+            />
+            <div class="person-info">
+              <p class="person-init">Павлишин Іванна</p>
+              <p class="person-job">Не вирішено</p>
+            </div>
+          </div>
+          <div class="person-wraper">
+            <img
+              src="https://firebasestorage.googleapis.com/v0/b/noa2-8fefc.appspot.com/o/images%2F%D0%9B%D0%9E%D0%93%D0%9E%20%D0%B2%D0%B5%D0%BA%D1%82%D0%BE%D1%80.jpg?alt=media&token=8fb85718-66e7-47de-aa24-17a413760946"
+              alt=""
+            />
+            <div class="person-info">
+              <p class="person-init">Сологуб Дмитро</p>
+              <p class="person-job">Не вирішено</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <h2>Імовірні питання про курси</h2>
+        <div class="question-wraper">
+          <div class="question-item-wraper">
+            <div class="question-item">
+              <p class="question-text">Дуже важливе питання</p>
+              <div onclick="openMoreInfo(this)">
+                <img
+                  src="https://firebasestorage.googleapis.com/v0/b/noa2-8fefc.appspot.com/o/images%2FVector_Down.png?alt=media&token=a2e96190-8ada-43ad-833a-efadbecd4e4a"
+                  alt="More"
+                />
+              </div>
+            </div>
+            <div class="answer-item">Відповідь на дуже важливе питання</div>
+          </div>
+          <div class="question-item-wraper">
+            <div class="question-item">
+              <p class="question-text">Неймовірно важливе питання</p>
+              <div onclick="openMoreInfo(this)">
+                <img
+                  src="https://firebasestorage.googleapis.com/v0/b/noa2-8fefc.appspot.com/o/images%2FVector_Down.png?alt=media&token=a2e96190-8ada-43ad-833a-efadbecd4e4a"
+                  alt="More"
+                />
+              </div>
+            </div>
+            <div class="answer-item">
+              Відповідь на неймовірно важливе питання
+            </div>
+          </div>
+          <div class="question-item-wraper">
+            <div class="question-item">
+              <p class="question-text">Безпрецедентно важливе питання</p>
+              <div onclick="openMoreInfo(this)">
+                <img
+                  src="https://firebasestorage.googleapis.com/v0/b/noa2-8fefc.appspot.com/o/images%2FVector_Down.png?alt=media&token=a2e96190-8ada-43ad-833a-efadbecd4e4a"
+                  alt="More"
+                />
+              </div>
+            </div>
+            <div class="answer-item">
+              Відповідь на безпрецедентно важливе питання
+            </div>
+          </div>
+          <div class="question-item-wraper">
+            <div class="question-item">
+              <p class="question-text">Найважливіше питання</p>
+              <div onclick="openMoreInfo(this)">
+                <img
+                  src="https://firebasestorage.googleapis.com/v0/b/noa2-8fefc.appspot.com/o/images%2FVector_Down.png?alt=media&token=a2e96190-8ada-43ad-833a-efadbecd4e4a"
+                  alt="More"
+                />
+              </div>
+            </div>
+            <div class="answer-item">Відповідь найважливіше питання</div>
+          </div>
+          <div class="question-item-wraper">
+            <div class="question-item">
+              <p class="question-text">Безсумнівно найважливіше питання</p>
+              <div onclick="openMoreInfo(this)">
+                <img
+                  src="https://firebasestorage.googleapis.com/v0/b/noa2-8fefc.appspot.com/o/images%2FVector_Down.png?alt=media&token=a2e96190-8ada-43ad-833a-efadbecd4e4a"
+                  alt="More"
+                />
+              </div>
+            </div>
+            <div class="answer-item">
+              Відповідь на безсумнівно найважливіше питання
+            </div>
+          </div>
+          <div class="question-item-wraper">
+            <div class="question-item">
+              <p class="question-text">Цікаве питання</p>
+              <div onclick="openMoreInfo(this)">
+                <img
+                  src="https://firebasestorage.googleapis.com/v0/b/noa2-8fefc.appspot.com/o/images%2FVector_Down.png?alt=media&token=a2e96190-8ada-43ad-833a-efadbecd4e4a"
+                  alt="More"
+                />
+              </div>
+            </div>
+            <div class="answer-item">Відповідь на цікаве питання</div>
+          </div>
+          <div class="question-item-wraper">
+            <div class="question-item">
+              <p class="question-text">Нецікаве питання</p>
+              <div onclick="openMoreInfo(this)">
+                <img
+                  src="https://firebasestorage.googleapis.com/v0/b/noa2-8fefc.appspot.com/o/images%2FVector_Down.png?alt=media&token=a2e96190-8ada-43ad-833a-efadbecd4e4a"
+                  alt="More"
+                />
+              </div>
+            </div>
+            <div class="answer-item">Відповідь на нецікаве питання</div>
+          </div>
+          <div class="question-item-wraper">
+            <div class="question-item">
+              <p class="question-text">
+                Просто питання, бо я не знаю, що писати
+              </p>
+              <div onclick="openMoreInfo(this)">
+                <img
+                  src="https://firebasestorage.googleapis.com/v0/b/noa2-8fefc.appspot.com/o/images%2FVector_Down.png?alt=media&token=a2e96190-8ada-43ad-833a-efadbecd4e4a"
+                  alt="More"
+                />
+              </div>
+            </div>
+            <div class="answer-item">
+              Просто відповідь, бо я не знаю, що писати
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <h2>Почати</h2>
+        <div class="form-wraper">
+          <div class="input-row">
+            <input
+              type="text"
+              name="userName_main"
+              placeholder="Введіть ім'я"
+              class="input-half"
+              oninput="checkUserName(this)"
+            />
+            <input
+              type="text"
+              placeholder="Введіть прізвище"
+              class="input-half"
+              name="userSurname_main"
+              oninput="checkUserSurname(this)"
+            />
+          </div>
+          <input
+            type="email"
+            name="userEmail_main"
+            placeholder="Введіть email"
+            class="input-one"
+            oninput="checkEmail(this)"
+          />
+          <input
+            type="text"
+            placeholder="Введіть номер телефону"
+            class="input-one"
+            name="userPhoneNumber_main"
+            oninput="checkPhoneNumber(this)"
+          />
+          <div class="input-row">
+            <input
+              type="password"
+              placeholder="Введіть пароль"
+              class="input-half"
+              name="userPasswordRegister_main"
+              oninput="checkPassword(this)"
+            />
+            <input
+              type="password"
+              placeholder="Повторіть пароль"
+              class="input-half"
+              name="userPasswordRepeat_main"
+              oninput="checkPasswordMatch(document.querySelector('input[name=\'userPasswordRegister_main\']'), this)"
+            />
+          </div>
+          <p id="error-text-main"></p>
+          <div class="register-form-buttons">
+            <button
+              type="button"
+              class="sign-in-button"
+              id="sign-in-button-main"
+              name="buttonSignIn_main"
+              onclick="registerUser(formAuthMain)"
+            >
+              Зареєструватися
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <div id="wrapper-shadow">
+      <form class="modal-window" id="modal-register">
+        <button class="button-close" type="reset" onclick="closeModal()">
+          +
+        </button>
+        <h3 id="modal-auth-h3">Зареєструватися</h3>
+        <div class="form-wraper">
+          <div class="input-row">
+            <input
+              type="text"
+              name="username_modal"
+              placeholder="Введіть ім'я"
+              class="input-half"
+              oninput="checkUserName(this)"
+            />
+            <input
+              type="text"
+              placeholder="Введіть прізвище"
+              name="userSurnname_modal"
+              class="input-half"
+              oninput="checkUserSurname(this)"
+            />
+          </div>
+          <input
+            type="email"
+            name="userEmail_modal"
+            placeholder="Введіть email"
+            class="input-one"
+            oninput="checkEmail(this)"
+          />
+          <input
+            type="text"
+            placeholder="Введіть номер телефону"
+            class="input-one"
+            name="userPhoneNumber_modal"
+            oninput="checkPhoneNumber(this)"
+          />
+          <div class="input-row">
+            <input
+              type="password"
+              placeholder="Введіть пароль"
+              class="input-half"
+              name="userPasswordRegister_modal"
+              oninput="checkPassword(this)"
+            />
+            <input
+              type="password"
+              placeholder="Повторіть пароль"
+              class="input-half"
+              name="userPasswordRepeat_modal"
+              oninput="checkPasswordMatch(document.querySelector('input[name=\'userPasswordRegister_modal\']'), this)"
+            />
+          </div>
+          <input
+            type="password"
+            style="display: none"
+            name="userPasswordLogin_modal"
+            placeholder="Введіть пароль"
+            class="input-one"
+          />
+          <p id="error-text"></p>
+          <div class="register-form-buttons">
+            <button
+              name="button-cancel"
+              onclick="closeModal()"
+              class="cancel-button"
+              type="reset"
+            >
+              Скасувати
+            </button>
+            <button
+              name="button-sign-in"
+              type="button"
+              class="sign-in-button"
+              id="sign-in-button-main"
+              onclick="registerUser(formAuthModal)"
+            >
+              Зареєструватися
+            </button>
+            <button
+              name="button-login-in"
+              type="button"
+              class="sign-in-button"
+              id="sign-in-button-main"
+              style="display: none"
+              onclick="loginInUser()"
+            >
+              Увйти
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+    <link
+      rel="stylesheet"
+      href="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/themes/df-messenger-default.css"
+    />
+    <script src="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/df-messenger.js"></script>
+    <df-messenger
+      project-id="singular-tuner-453212-c2"
+      agent-id="fea4b086-5934-4c1d-9883-34dc2a9057cf"
+      language-code="uk"
+      max-query-length="-1"
+    >
+      <df-messenger-chat-bubble chat-title="Hamster"> </df-messenger-chat-bubble>
+    </df-messenger>
+    <style>
+      df-messenger {
+        z-index: 999;
+        position: fixed;
+        --df-messenger-font-color: #000;
+        --df-messenger-font-family: Google Sans;
+        --df-messenger-chat-background: #f3f6fc;
+        --df-messenger-message-user-background: #d3e3fd;
+        --df-messenger-message-bot-background: #fff;
+        bottom: 16px;
+        right: 16px;
+      }
+    </style>
+  </body>
+  <script type="module" src="./js/main.js"></script>
+</html>
